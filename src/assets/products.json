@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "T-shirt1",
+    "image": "img/1.jpg",
+    "prix": 25
+  },
+  {
+    "id": 2,
+    "name": "T-shirt2",
+    "image": "img/2.jpg",
+    "prix": 25
+  },
+  {
+    "id": 3,
+    "name": "T-shirt3",
+    "image": "img/3.jpg",
+    "prix": 25
+  },
+  {
+    "id": 4,
+    "name": "T-shirt4",
+    "image": "img/1.jpg",
+    "prix": 25
+  },
+  {
+    "id": 5,
+    "name": "T-shirt5",
+    "image": "img/4.jpg",
+    "prix": 25
+  },
+  {
+    "id": 6,
+    "name": "T-shirt6",
+    "image": "img/3.jpg",
+    "prix": 25
+  }
+]

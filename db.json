@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "name": "t-test8",
+      "image": "assets/img/2.jpg",
+      "prix": "500",
+      "description": "test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test ",
+      "categorie": "test categorie",
+      "id": 1
+    },
+    {
+      "name": "T-shirt2",
+      "image": "assets/img/1.jpg",
+      "prix": 20,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id urna erat. Donec enim ligula, ultricies vitae magna sit amet, viverra ultricies lorem. Aenean tristique nisi metus, eu luctus eros dapibus eget. Sed sagittis erat sed erat vulputate, sed elementum lorem rhoncus. Duis vel velit sem. In et lorem in odio porta porta.",
+      "categorie": "t-shirt",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "T-shirt3",
+      "image": "assets/img/3.jpg",
+      "prix": 22,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id urna erat. Donec enim ligula, ultricies vitae magna sit amet, viverra ultricies lorem. Aenean tristique nisi metus, eu luctus eros dapibus eget. Sed sagittis erat sed erat vulputate, sed elementum lorem rhoncus. Duis vel velit sem. In et lorem in odio porta porta.",
+      "categorie": "t-shirt"
+    },
+    {
+      "id": 4,
+      "name": "T-shirt4",
+      "image": "assets/img/4.jpg",
+      "prix": 35,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id urna erat. Donec enim ligula, ultricies vitae magna sit amet, viverra ultricies lorem. Aenean tristique nisi metus, eu luctus eros dapibus eget. Sed sagittis erat sed erat vulputate, sed elementum lorem rhoncus. Duis vel velit sem. In et lorem in odio porta porta.",
+      "categorie": "t-shirt"
+    },
+    {
+      "id": 5,
+      "name": "T-shirt5",
+      "image": "assets/img/5.jpg",
+      "prix": 45,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id urna erat. Donec enim ligula, ultricies vitae magna sit amet, viverra ultricies lorem. Aenean tristique nisi metus, eu luctus eros dapibus eget. Sed sagittis erat sed erat vulputate, sed elementum lorem rhoncus. Duis vel velit sem. In et lorem in odio porta porta.",
+      "categorie": "t-shirt"
+    }
+  ]
+}
