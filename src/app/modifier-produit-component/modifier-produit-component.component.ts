@@ -33,7 +33,8 @@ export class ModifierProduitComponentComponent implements OnInit {
               image: new FormControl(this.product.image, Validators.required),
               prix: new FormControl(this.product.prix, Validators.required),
               description: new FormControl(this.product.description, Validators.required),
-              categorie: new FormControl(this.product.categorie, Validators.required)
+              categorie: new FormControl(this.product.categorie, Validators.required),
+              quantite: new FormControl(this.product.stock, Validators.required)
             }
           );
       },

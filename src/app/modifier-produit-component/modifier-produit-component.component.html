@@ -54,6 +54,11 @@
     Must Be A Number
   </small>
 
+  <input type="number" class="form-control" placeholder="Quantite" aria-describedby="defaultRegisterFormPhoneHelpBlock" formControlName="quantite">
+  <small class="form-text text-muted mb-4">
+    Must Be A Number
+  </small>
+
   <button class="btn btn-info my-4 btn-block" type="submit" [disabled]="productData.invalid" (click)="updateProduct(productData.value)">Modifier</button>
 </form>
 

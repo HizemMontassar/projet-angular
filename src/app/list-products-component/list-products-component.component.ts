@@ -11,6 +11,14 @@ export class ListProductsComponentComponent implements OnInit {
 
   products;
 
+  rechercher: string;
+
+  descriptionParent: number;
+
+  afficherParent;
+
+  showReclamation: boolean = false;
+
   constructor(private productService : ProductServiceService) { }
 
   ngOnInit(): void {
@@ -26,7 +34,11 @@ export class ListProductsComponentComponent implements OnInit {
     this.productService.deleteProducts(id).subscribe();
     window.location.reload();
     alert("Product Have Been Deleted !");
-
   }
+
+  getDescription(desc){
+    this.descriptionParent = desc;
+    this.showReclamation = true;
+}
 
 }

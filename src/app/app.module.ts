@@ -11,6 +11,8 @@ import { ModifierProduitComponentComponent } from './modifier-produit-component/
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AjouterProduitComponentComponent } from './ajouter-produit-component/ajouter-produit-component.component';
+import { RelamationComponentComponent } from './relamation-component/relamation-component.component';
+import { SearchFilerPipe } from './search-filer.pipe';
 
 
 
@@ -21,7 +23,9 @@ import { AjouterProduitComponentComponent } from './ajouter-produit-component/aj
     ListProductsComponentComponent,
     ProductComponentComponent,
     ModifierProduitComponentComponent,
-    AjouterProduitComponentComponent
+    AjouterProduitComponentComponent,
+    RelamationComponentComponent,
+    SearchFilerPipe
   ],
   imports: [
     BrowserModule,

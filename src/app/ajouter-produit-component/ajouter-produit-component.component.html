@@ -32,8 +32,7 @@
       <input type="text" class="form-control" name="name" placeholder="Nom Produit" required="required" [ngModel] #name="ngModel">
     </div>
     <div class="col">
-<!--      <input type="text" class="form-control" placeholder="Image" name="image" required="required" [ngModel] #image="ngModel">-->
-    <input type="file" accept="image/" (change)="onFileChangeed($event)" [(ngModel)]="currentInput" name="image" [ngModel] #image="ngModel">
+      <input type="text" class="form-control" name="image" placeholder="Image" required="required" [ngModel] #image="ngModel">
     </div>
   </div>
 
@@ -48,6 +47,11 @@
   </small>
 
   <input type="number" class="form-control" placeholder="Prix" name="prix" aria-describedby="defaultRegisterFormPhoneHelpBlock" required="required" [ngModel] #prix="ngModel">
+  <small class="form-text text-muted mb-4">
+    Must Be A Number
+  </small>
+
+  <input type="number" class="form-control" placeholder="Quantitz" name="quantite" aria-describedby="defaultRegisterFormPhoneHelpBlock" required="required" [ngModel] #quantite="ngModel">
   <small class="form-text text-muted mb-4">
     Must Be A Number
   </small>
