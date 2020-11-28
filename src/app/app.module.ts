@@ -13,6 +13,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AjouterProduitComponentComponent } from './ajouter-produit-component/ajouter-produit-component.component';
 import { RelamationComponentComponent } from './relamation-component/relamation-component.component';
 import { SearchFilerPipe } from './search-filer.pipe';
+import { LoginComponentComponent } from './login-component/login-component.component';
+
+import { AuthModule } from '@auth0/auth0-angular';
+import { environment as env } from '../environments/environment';
 
 
 
@@ -25,14 +29,15 @@ import { SearchFilerPipe } from './search-filer.pipe';
     ModifierProduitComponentComponent,
     AjouterProduitComponentComponent,
     RelamationComponentComponent,
-    SearchFilerPipe
+    SearchFilerPipe,
+    LoginComponentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

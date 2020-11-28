@@ -19,6 +19,8 @@ export class ListProductsComponentComponent implements OnInit {
 
   showReclamation: boolean = false;
 
+  prodcutId: number;
+
   constructor(private productService : ProductServiceService) { }
 
   ngOnInit(): void {
@@ -37,7 +39,7 @@ export class ListProductsComponentComponent implements OnInit {
   }
 
   getDescription(desc){
-    this.descriptionParent = desc;
+    this.prodcutId = desc;
     this.showReclamation = true;
 }
 

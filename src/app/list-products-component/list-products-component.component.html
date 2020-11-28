@@ -41,10 +41,7 @@
           </div>
           <div class="overlay">
             <button type="button" class="btn btn-danger" title="Supprimer Produit" (click)="deleteProduct(product.id)">Supprimer</button>
-            <button type="button" class="btn btn-primary" title="quantite Produit" (click)="getDescription(product.stock)">Quantité</button><br>
-            <div *ngIf="showReclamation">
-              <app-relamation-component [descriptionFils]="descriptionParent"></app-relamation-component>
-            </div>
+            <button type="button" class="btn btn-primary" title="quantite Produit" (click)="getDescription(product.id)">Reclamation</button><br>
           </div>
         </div>
 
@@ -52,5 +49,10 @@
 
   </div>
 </div>
+
+<div *ngIf="showReclamation">
+  <app-relamation-component [descriptionFils]="prodcutId"></app-relamation-component>
+</div>
+
 
 

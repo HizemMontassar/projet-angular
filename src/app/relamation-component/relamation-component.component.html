@@ -1,1 +1,18 @@
-<div [ngStyle]="{'color':'black','background-color':'white','width':'220px','height':'35px','font-size':'27px','weight':'bold','text-align':'center'}">{{descriptionFils}}</div>
+<!--<div [ngStyle]="{'color':'black','background-color':'white','width':'220px','height':'35px','font-size':'27px','weight':'bold','text-align':'center'}">{{descriptionFils}}</div>-->
+<form class="text-center border border-light p-5">
+
+  <p class="h4 mb-4">Reclamation</p>
+
+  <div class="form-row mb-4">
+    <div class="col">
+      <input type="text" class="form-control" value="Product Id : {{descriptionFils}}" disabled>
+    </div>
+  </div>
+
+  <input type="text" class="form-control" placeholder="Description" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+  <small class="form-text text-muted mb-4">
+    MinLength 5
+  </small>
+
+  <button class="btn btn-info my-4 btn-block" type="submit">Envoyer Reclamation</button>
+</form>

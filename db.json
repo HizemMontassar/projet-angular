@@ -45,5 +45,12 @@
       "id": 6,
       "stock": 28
     }
+  ],
+  "Users" : [
+    {
+      "id": 1,
+      "username": "user",
+      "password" : "user"
+    }
   ]
 }
