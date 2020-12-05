@@ -11,22 +11,26 @@ export class ListProductsComponentComponent implements OnInit {
 
   products;
 
+  totalRecord: number;
+
+  page = 1;
+
   rechercher: string;
 
   descriptionParent: number;
 
   afficherParent;
 
-  showReclamation: boolean = false;
+  showReclamation = false;
 
   prodcutId: number;
 
-  constructor(private productService : ProductServiceService) { }
+  constructor(private productService: ProductServiceService) { }
 
   ngOnInit(): void {
 
     this.productService.getProducts().subscribe(
-      (data) => {this.products = data, console.log(this.products)},
+      (data) => {this.products = data, console.log(this.products), this.totalRecord = data.length; },
       (error) => console.log(error)
     );
 
@@ -35,7 +39,7 @@ export class ListProductsComponentComponent implements OnInit {
   deleteProduct(id){
     this.productService.deleteProducts(id).subscribe();
     window.location.reload();
-    alert("Product Have Been Deleted !");
+    alert('Product Have Been Deleted !');
   }
 
   getDescription(desc){

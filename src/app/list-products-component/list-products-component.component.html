@@ -24,9 +24,30 @@
   <input type="search" [(ngModel)]="rechercher" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
   <button id="btn-add-product" type="button" class="btn float-right btn-success" title="Ajouter Produit" routerLink="ajouter">Ajouter Un Produit</button>
   <h2>Nos Produits</h2>
+
+  <div class="col-md-12">
+    <pagination-controls  class="my-pagination"
+                          align="center"
+                          id="listing_pagination"
+                          (pageChange)="page = $event"
+                          maxSize="5"
+                          directionLinks="true"
+                          responsive = "true"
+                          autoHide="true"
+                          previousLabel="Precedent"
+                          nextLabel="Suivant"
+    >
+    </pagination-controls>
+  </div>
+
   <div class="row">
 
-      <div class="col-md-3" *ngFor="let product of products | searchFiler:rechercher">
+      <div class="col-md-3" *ngFor="let product of products | searchFiler:rechercher | paginate: {
+      id: 'listing_pagination',
+      itemsPerPage: 8,
+      currentPage: page,
+      totalItems: totalRecord
+      }">
         <div class="product-top">
 <!--          <a [routerLink]="product"></a>-->
            <a [routerLink]="product.id"><img src="{{product.image}}" height="300px" width="50px"></a>
@@ -48,6 +69,7 @@
     </div>
 
   </div>
+
 </div>
 
 <div *ngIf="showReclamation">

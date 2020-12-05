@@ -1,11 +1,11 @@
 {
   "products": [
     {
-      "name": "t-test8",
+      "name": "t-shirt1",
       "image": "assets/img/2.jpg",
       "prix": "500",
       "description": "test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test ",
-      "categorie": "test categorie",
+      "categorie": "t-shirt",
       "id": 1,
       "stock": 15
     },
@@ -20,7 +20,7 @@
     },
     {
       "id": 4,
-      "name": "T-shirt4",
+      "name": "T-shirt3",
       "image": "assets/img/4.jpg",
       "prix": 35,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id urna erat. Donec enim ligula, ultricies vitae magna sit amet, viverra ultricies lorem. Aenean tristique nisi metus, eu luctus eros dapibus eget. Sed sagittis erat sed erat vulputate, sed elementum lorem rhoncus. Duis vel velit sem. In et lorem in odio porta porta.",
@@ -29,7 +29,7 @@
     },
     {
       "id": 5,
-      "name": "T-shirt5",
+      "name": "T-shirt4",
       "image": "assets/img/5.jpg",
       "prix": 45,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id urna erat. Donec enim ligula, ultricies vitae magna sit amet, viverra ultricies lorem. Aenean tristique nisi metus, eu luctus eros dapibus eget. Sed sagittis erat sed erat vulputate, sed elementum lorem rhoncus. Duis vel velit sem. In et lorem in odio porta porta.",
@@ -37,12 +37,48 @@
       "stock": 12
     },
     {
-      "name": "aaaaaaaaaaaaaa",
-      "image": "assets/img/2.jpg",
-      "description": "aaaaaaaaaaaaaaaaaaaa",
-      "categorie": "aaaaaaaaaaaaaaaa",
+      "name": "T-shirt5",
+      "image": "assets/img/3.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id urna erat. Donec enim ligula, ultricies vitae magna sit amet, viverra ultricies lorem. Aenean tristique nisi metus, eu luctus eros dapibus eget. Sed sagittis erat sed erat vulputate, sed elementum lorem rhoncus. Duis vel velit sem. In et lorem in odio porta porta.",
+      "categorie": "t-shirt",
       "prix": 20,
       "id": 6,
+      "stock": 28
+    },
+    {
+      "name": "T-shirt6",
+      "image": "assets/img/5.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id urna erat. Donec enim ligula, ultricies vitae magna sit amet, viverra ultricies lorem. Aenean tristique nisi metus, eu luctus eros dapibus eget. Sed sagittis erat sed erat vulputate, sed elementum lorem rhoncus. Duis vel velit sem. In et lorem in odio porta porta.",
+      "categorie": "t-shirt",
+      "prix": 20,
+      "id": 7,
+      "stock": 28
+    },
+    {
+      "name": "T-shirt7",
+      "image": "assets/img/1.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id urna erat. Donec enim ligula, ultricies vitae magna sit amet, viverra ultricies lorem. Aenean tristique nisi metus, eu luctus eros dapibus eget. Sed sagittis erat sed erat vulputate, sed elementum lorem rhoncus. Duis vel velit sem. In et lorem in odio porta porta.",
+      "categorie": "t-shirt",
+      "prix": 20,
+      "id": 8,
+      "stock": 28
+    },
+    {
+      "name": "T-shirt8",
+      "image": "assets/img/2.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id urna erat. Donec enim ligula, ultricies vitae magna sit amet, viverra ultricies lorem. Aenean tristique nisi metus, eu luctus eros dapibus eget. Sed sagittis erat sed erat vulputate, sed elementum lorem rhoncus. Duis vel velit sem. In et lorem in odio porta porta.",
+      "categorie": "t-shirt",
+      "prix": 20,
+      "id": 9,
+      "stock": 28
+    },
+    {
+      "name": "T-shirt9",
+      "image": "assets/img/4.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id urna erat. Donec enim ligula, ultricies vitae magna sit amet, viverra ultricies lorem. Aenean tristique nisi metus, eu luctus eros dapibus eget. Sed sagittis erat sed erat vulputate, sed elementum lorem rhoncus. Duis vel velit sem. In et lorem in odio porta porta.",
+      "categorie": "t-shirt",
+      "prix": 20,
+      "id": 10,
       "stock": 28
     }
   ],

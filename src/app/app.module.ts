@@ -15,8 +15,8 @@ import { RelamationComponentComponent } from './relamation-component/relamation-
 import { SearchFilerPipe } from './search-filer.pipe';
 import { LoginComponentComponent } from './login-component/login-component.component';
 
-import { AuthModule } from '@auth0/auth0-angular';
-import { environment as env } from '../environments/environment';
+import {NgxPaginationModule} from 'ngx-pagination';
+
 
 
 
@@ -38,6 +38,7 @@ import { environment as env } from '../environments/environment';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
