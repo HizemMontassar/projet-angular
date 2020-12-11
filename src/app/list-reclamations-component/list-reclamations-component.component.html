@@ -1,0 +1,32 @@
+<app-navbar-component></app-navbar-component>
+<br><br><br>
+<div class="container">
+  <table class="table">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">Id Reclamation</th>
+      <th scope="col">Id Produit</th>
+      <th scope="col">Date Reclamation</th>
+      <th scope="col">Description</th>
+      <th scope="col">Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let reclamation of listReclamations">
+      <th scope="row">{{reclamation.id}}</th>
+      <td>{{reclamation.idProduct}}</td>
+      <td>{{reclamation.date}}</td>
+      <td>{{reclamation.description}}</td>
+      <td [ngStyle]="{'background-color': reclamation.status ? 'green' : 'orange'}">
+        <div *ngIf="reclamation.status">
+          Bien Envoyée
+        </div>
+        <div *ngIf="!reclamation.status">
+          En Attente
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+

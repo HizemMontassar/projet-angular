@@ -23,7 +23,7 @@ export class ListProductsComponentComponent implements OnInit {
 
   showReclamation = false;
 
-  prodcutId: number;
+  prodcutId: Product;
 
   constructor(private productService: ProductServiceService) { }
 

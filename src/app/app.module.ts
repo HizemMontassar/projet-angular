@@ -16,6 +16,8 @@ import { SearchFilerPipe } from './search-filer.pipe';
 import { LoginComponentComponent } from './login-component/login-component.component';
 
 import {NgxPaginationModule} from 'ngx-pagination';
+import { NavbarComponentComponent } from './navbar-component/navbar-component.component';
+import { ListReclamationsComponentComponent } from './list-reclamations-component/list-reclamations-component.component';
 
 
 
@@ -30,7 +32,9 @@ import {NgxPaginationModule} from 'ngx-pagination';
     AjouterProduitComponentComponent,
     RelamationComponentComponent,
     SearchFilerPipe,
-    LoginComponentComponent
+    LoginComponentComponent,
+    NavbarComponentComponent,
+    ListReclamationsComponentComponent
   ],
   imports: [
     BrowserModule,

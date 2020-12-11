@@ -14,7 +14,7 @@ export class ModifierProduitComponentComponent implements OnInit {
   productData: FormGroup;
   productId: number;
   product: Product;
-
+  imageSrc: string;
 
   constructor(private productService: ProductServiceService, private activatedRoute: ActivatedRoute, private router: Router) { }
 
@@ -34,7 +34,8 @@ export class ModifierProduitComponentComponent implements OnInit {
               prix: new FormControl(this.product.prix, Validators.required),
               description: new FormControl(this.product.description, Validators.required),
               categorie: new FormControl(this.product.categorie, Validators.required),
-              quantite: new FormControl(this.product.stock, Validators.required)
+              quantite: new FormControl(this.product.stock, Validators.required),
+              fileSource: new FormControl('', [Validators.required])
             }
           );
       },
@@ -55,6 +56,35 @@ export class ModifierProduitComponentComponent implements OnInit {
     });
     // window.location.reload();
     // alert("Product Have Been Updated !");
+  }
+
+  onFileChange(event) {
+
+    const reader = new FileReader();
+
+    if(event.target.files && event.target.files.length) {
+
+      const [image] = event.target.files;
+
+      reader.readAsDataURL(image);
+
+
+      reader.onload = () => {
+
+        this.imageSrc = reader.result as string;
+
+        this.productData.patchValue({
+
+          fileSource: reader.result
+
+        });
+
+      };
+
+
+
+    }
+
   }
 
 
