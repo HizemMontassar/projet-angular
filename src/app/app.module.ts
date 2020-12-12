@@ -18,6 +18,8 @@ import { LoginComponentComponent } from './login-component/login-component.compo
 import {NgxPaginationModule} from 'ngx-pagination';
 import { NavbarComponentComponent } from './navbar-component/navbar-component.component';
 import { ListReclamationsComponentComponent } from './list-reclamations-component/list-reclamations-component.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 
 
@@ -42,7 +44,8 @@ import { ListReclamationsComponentComponent } from './list-reclamations-componen
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

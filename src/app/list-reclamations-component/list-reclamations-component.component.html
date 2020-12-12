@@ -1,6 +1,6 @@
 <app-navbar-component></app-navbar-component>
 <br><br><br>
-<div class="container">
+<div class="container" id="content" #content>
   <table class="table">
     <thead class="thead-dark">
     <tr>
@@ -27,6 +27,14 @@
       </td>
     </tr>
     </tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><button type="button" class="btn btn-danger" (click)="downloadPDF()">Telecharger PDF <fa-icon [icon]="faFilePdf"></fa-icon></button>
+      </td>
+    </tr>
   </table>
 </div>
 
