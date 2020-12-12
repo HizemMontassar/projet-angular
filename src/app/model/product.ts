@@ -7,4 +7,5 @@ export class Product{
   categorie: string;
   stock: number;
   fileSource: string;
+  nbReclamation: number;
 }

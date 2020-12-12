@@ -18,7 +18,6 @@
 <!--  <button class="btn btn-info my-4 btn-block" type="submit" (click)="ajouterReclamation(form.value, descriptionFils)">Envoyer Reclamation</button>-->
 <!--</form>-->
 
-
 <div class="card mb-3" style="max-width: 800px;">
   <div class="row no-gutters">
     <div class="col-md-4">
@@ -29,14 +28,17 @@
 
         <div [ngStyle]="{'color':'green'}">
           <h5 class="card-title text-center">Reclamation Produit : {{descriptionFils.name}}</h5>
+          <div class="text-center">
+            <button type="button" class="btn btn-danger" (click)="onRequest()">Nombre des reclamations</button>
+          </div>
         </div>
 
         <form class="text-center border border-light p-5" #form="ngForm">
           <textarea class="form-control" name="description" rows="3" placeholder="Description" aria-describedby="defaultRegisterFormPhoneHelpBlock" [ngModel] #description="ngModel"></textarea>
           <button class="btn btn-info my-4 btn-block" type="submit" (click)="ajouterReclamation(form.value, descriptionFils.id)">Envoyer Reclamation</button>
         </form>
-
       </div>
     </div>
   </div>
 </div>
+

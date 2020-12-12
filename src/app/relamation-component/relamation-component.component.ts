@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
 import {Reclamation} from '../model/reclamation';
 import {Router} from '@angular/router';
 import {ReclamationServiceService} from '../shared/reclamation-service.service';
@@ -17,7 +17,15 @@ export class RelamationComponentComponent implements OnInit {
 
   @Input() descriptionFils: Product;
 
+  @Output() envoyerNom = new EventEmitter<string>();
+
+  onRequest(){
+    this.envoyerNom.emit(this.descriptionFils.nbReclamation + ' Reclamations.');
+  }
+
   afficher: boolean = false;
+
+  product;
 
   reclamationData: FormGroup = new FormGroup({
     idProduct: new FormControl(''),

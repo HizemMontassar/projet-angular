@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Output} from '@angular/core';
 import {ProductServiceService} from '../shared/product-service.service';
 import {Product} from '../model/product';
 
@@ -8,6 +8,12 @@ import {Product} from '../model/product';
   styleUrls: ['./list-products-component.component.css']
 })
 export class ListProductsComponentComponent implements OnInit {
+
+  nomProduitFils: string;
+
+  getNom(nom){
+    this.nomProduitFils = nom;
+  }
 
   products;
 
